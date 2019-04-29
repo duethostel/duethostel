@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "duethostel",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Website created using Gatsby for Duet Hostel in Karakol",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Elaman Imashov <elaman@outlook.com>",
   "dependencies": {
     "gatsby": "^2.3.32",
     "gatsby-image": "^2.0.40",
@@ -22,7 +22,7 @@
     "prettier": "^1.17.0"
   },
   "keywords": [
-    "gatsby"
+    "website"
   ],
   "license": "MIT",
   "scripts": {
@@ -35,9 +35,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/duethostel/duethostel"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/duethostel/duethostel/issues"
   }
 }
