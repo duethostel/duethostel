@@ -5,15 +5,17 @@ import Logo from "./logo"
 import Navigation from "./navigation"
 import DrawerToggle from "./drawerToggle"
 
+import classes from "../styles/toolbar.module.css"
+
 const Toolbar = ({ drawerStateToggleHandler }) => (
-  <div>
-    <div>
+  <div className={classes.Toolbar}>
+    <div className={classes.Logo}>
       <Logo />
     </div>
-    <div>
+    <div className={classes.Navigation}>
       <Navigation />
     </div>
-    <div>
+    <div className={classes.DrawerToggle}>
       <DrawerToggle stateToggleHandler={drawerStateToggleHandler} />
     </div>
   </div>
