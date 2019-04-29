@@ -7,7 +7,7 @@
   background: var(--main-dark-color);
 
   box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
-  z-index: 2;
+  z-index: 200;
   transition: transform .2s ease-out;
 }
 

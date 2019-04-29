@@ -1,0 +1,23 @@
+.Header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-top: calc(var(--toolbar-height) - 80px);
+  box-sizing: border-box;
+  margin: 0;
+  min-height: var(--header-min-height);
+  color: var(--main-light-color);
+  text-shadow: 0 0 15px var(--main-dark-color);
+  box-shadow: inset 0px 0px 200px 50px rgba(0, 0, 0, .5);
+}
+.Photo {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.Header h1 {
+  position: relative;
+  font-size: calc(2em + .5vw);
+}
