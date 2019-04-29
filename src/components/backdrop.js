@@ -1,8 +1,11 @@
 import React from "react"
 
-const Backdrop = ({ state, stateToggle }) => (
+import classes from "../styles/backdrop.module.css"
+
+const Backdrop = ({ state, toggleHandler }) => (
   <div
-    onClick={stateToggle}></div>
+    className={[classes.Backdrop, state ? classes.Open : classes.Closed].join(' ')}
+    onClick={toggleHandler}></div>
 )
 
 export default Backdrop
