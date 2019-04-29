@@ -7,7 +7,7 @@ import Header from "../components/header";
 const AccommodationsPage = () => (
   <Layout>
     <SEO title="Accommodations" keywords={[]} />
-    <Header>Accommodations</Header>
+    <Header photo="accommodations.jpg">Accommodations</Header>
   </Layout>
 )
 

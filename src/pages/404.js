@@ -6,8 +6,8 @@ import Header from "../components/header";
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
-    <Header>Page not found</Header>
+    <SEO title="404: Page not found" keywords={[]} />
+    <Header photo="photos/home.jpg">Not found</Header>
   </Layout>
 )
 
