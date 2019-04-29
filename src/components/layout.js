@@ -5,6 +5,8 @@ import { StaticQuery, graphql } from "gatsby"
 import Toolbar from "./toolbar"
 import Drawer from "./drawer"
 
+import "../styles/styles.css";
+
 const Layout = ({ children }) => {
   const [drawerState, drawerSetState] = useState(false);
   const drawerStateToggleHandler = _ => drawerSetState(!drawerState)
