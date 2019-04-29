@@ -1,0 +1,24 @@
+.DrawerToggle {
+  border: none;
+  background-color: transparent;
+  width: 58px;
+  padding: 14px 13px 12px;
+  margin: 0;
+  box-sizing: border-box;
+  border-top: 4px solid transparent;
+}
+
+.DrawerToggle div {
+  content: " ";
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  margin: 7px 0;
+}
+
+.DrawerToggle:hover,
+.DrawerToggle:focus {
+  outline: 0;
+  background-color: var(--main-light-color-20);
+  border-color: var(--main-light-color-20);
+}
