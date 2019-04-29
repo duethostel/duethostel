@@ -5,6 +5,7 @@
   right: 0;
   display: flex;
   justify-content: flex-end;
+  z-index: 100;
 }
 
 .Toolbar .Navigation {
