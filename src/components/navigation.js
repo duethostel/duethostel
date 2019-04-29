@@ -1,22 +1,24 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import classes from "../styles/navigation.module.css"
+
 const Navigation = () => (
-  <ul>
+  <ul className={classes.Navigation}>
     <li>
-      <Link to="/" exact>Home</Link>
+      <Link activeClassName={classes.Active} to="/" exact>Home</Link>
     </li>
     <li>
-      <Link to="/accommodations">Accommodations</Link>
+      <Link activeClassName={classes.Active} to="/accommodations">Accommodations</Link>
     </li>
     <li>
-      <Link to="/meeting-point">Meeting point</Link>
+      <Link activeClassName={classes.Active} to="/meeting-point">Meeting point</Link>
     </li>
     <li>
-      <Link to="/spa">Spa</Link>
+      <Link activeClassName={classes.Active} to="/spa">Spa</Link>
     </li>
     <li>
-      <Link to="/contacts">Contacts</Link>
+      <Link activeClassName={classes.Active} to="/contacts">Contacts</Link>
     </li>
   </ul>
 )
