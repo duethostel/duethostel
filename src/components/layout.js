@@ -9,7 +9,7 @@ import "../styles/styles.css"
 import classes from "../styles/layout.module.css"
 
 const Layout = ({ children }) => {
-  const [drawerState, drawerSetState] = useState(false);
+  const [drawerState, drawerSetState] = useState(false)
   const drawerStateToggleHandler = _ => drawerSetState(!drawerState)
 
   return (
@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
         </div>
       )}
     />
-  );
+  )
 }
 
 Layout.propTypes = {

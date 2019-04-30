@@ -12,7 +12,7 @@ const Drawer = ({ state, stateToggleHandler }) => {
       <Backdrop
         state={state}
         toggleHandler={stateToggleHandler} />
-      <div className={[classes.Content, state ? classes.Open : classes.Closed].join(' ')}>
+      <div className={[classes.Content, state ? classes.Open : classes.Closed].join(" ")}>
         <div className={classes.Logo}>
           <Logo />
         </div>
@@ -21,7 +21,7 @@ const Drawer = ({ state, stateToggleHandler }) => {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default Drawer
