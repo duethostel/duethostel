@@ -9,7 +9,7 @@ function DrawerToggle({ stateToggleHandler }) {
       <div></div>
       <div></div>
     </button>
-  );
+  )
 }
 
 export default DrawerToggle

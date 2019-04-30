@@ -6,7 +6,7 @@ import classes from "../styles/navigation.module.css"
 const Navigation = () => (
   <ul className={classes.Navigation}>
     <li>
-      <Link activeClassName={classes.Active} to="/" exact>Home</Link>
+      <Link activeClassName={classes.Active} to="/">Home</Link>
     </li>
     <li>
       <Link activeClassName={classes.Active} to="/accommodations">Accommodations</Link>

@@ -8,8 +8,8 @@ import Drawer from "./drawer"
 import "../styles/styles.css"
 import classes from "../styles/layout.module.css"
 
-const Layout = ({ children }) => {
-  const [drawerState, drawerSetState] = useState(false);
+const Layout = ({ children, solidToolbarAt }) => {
+  const [drawerState, drawerSetState] = useState(false)
   const drawerStateToggleHandler = _ => drawerSetState(!drawerState)
 
   return (
@@ -25,13 +25,13 @@ const Layout = ({ children }) => {
       `}
       render={data => (
         <div className={classes.Layout}>
-          <Toolbar drawerStateToggleHandler={drawerStateToggleHandler} />
+          <Toolbar drawerStateToggleHandler={drawerStateToggleHandler} solidAt={solidToolbarAt} />
           <main>{children}</main>
           <Drawer state={drawerState} stateToggleHandler={drawerStateToggleHandler} />
         </div>
       )}
     />
-  );
+  )
 }
 
 Layout.propTypes = {

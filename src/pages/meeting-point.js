@@ -3,13 +3,24 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "../components/header";
+import Header from "../components/header"
 
 const MeetingPointPage = () => (
-  <Layout>
-    <SEO title="Meeting point" keywords={[]} />
-    <Header photo="meeting-point.jpg">Meeting point</Header>
-  </Layout>
+  <StaticQuery
+    query={graphql`
+      query {
+        placeholderImage: file(relativePath: { eq: "photos/meeting-point.jpg" }) {
+          childImageSharp { fluid { ...GatsbyImageSharpFluid } }
+        }
+      }
+    `}
+    render={data => (
+      <Layout>
+        <SEO title="Meeting point" keywords={[]} />
+        <Header photo={data.placeholderImage.childImageSharp.fluid}>Meeting point</Header>
+      </Layout>
+    )}
+  />
 )
 
 export default MeetingPointPage
