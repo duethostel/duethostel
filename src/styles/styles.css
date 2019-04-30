@@ -19,7 +19,7 @@
 
 html {
   --main-dark-color: rgb(107, 98, 98);
-  --main-dark-color-50: rgba(107, 98, 98, 50);
+  --main-dark-color-80: rgba(107, 98, 98, .8);
   --main-light-color: rgb(255, 255, 255);
   --main-light-color-20: rgba(255, 255, 255, .2);
   --main-shadow-color: rgba(0, 0, 0, .5);

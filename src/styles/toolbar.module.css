@@ -6,6 +6,13 @@
   display: flex;
   justify-content: flex-end;
   z-index: 100;
+  transition: background-color 0.3s ease;
+}
+.Toolbar.SemiSolid {
+  background-color: var(--main-dark-color-80);
+}
+.Toolbar.SemiSolid.Solid {
+  background-color: var(--main-dark-color);
 }
 
 .Toolbar .Navigation {
@@ -22,10 +29,15 @@
   width: 130px;
   padding: 15px 30px;
   box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 .Toolbar .Logo svg {
   fill: var(--main-light-color);
   filter: drop-shadow(0 3px 3px var(--main-shadow-color));
+}
+.Toolbar.SemiSolid .Logo {
+  width: 98px;
+  padding: 5px 30px;
 }
 
 .Toolbar .DrawerToggle {
