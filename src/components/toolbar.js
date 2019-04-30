@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React, { useEffect, useRef } from "react"
 
 import Logo from "./logo"
@@ -48,10 +47,6 @@ const Toolbar = ({ drawerStateToggleHandler, solidAt }) => {
       </div>
     </div>
   )
-}
-
-Toolbar.propTypes = {
-  drawerStateToggle: PropTypes.node.isRequired
 }
 
 export default Toolbar
