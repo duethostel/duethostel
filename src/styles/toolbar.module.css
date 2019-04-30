@@ -11,6 +11,9 @@
 .Toolbar .Navigation {
   margin: 0 20px;
 }
+.Toolbar .Navigation a {
+  text-shadow: 0 3px 3px var(--main-shadow-color);
+}
 
 .Toolbar .Logo {
   position: absolute;
@@ -22,6 +25,7 @@
 }
 .Toolbar .Logo svg {
   fill: var(--main-light-color);
+  filter: drop-shadow(0 3px 3px var(--main-shadow-color));
 }
 
 .Toolbar .DrawerToggle {

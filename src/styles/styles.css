@@ -22,6 +22,7 @@ html {
   --main-dark-color-50: rgba(107, 98, 98, 50);
   --main-light-color: rgb(255, 255, 255);
   --main-light-color-20: rgba(255, 255, 255, .2);
+  --main-shadow-color: rgba(0, 0, 0, .5);
 
   --toolbar-height: 64px;
   --header-min-height: 400px;
