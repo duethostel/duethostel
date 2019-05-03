@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Toolbar from "./toolbar"
 import Drawer from "./drawer"
 
+import "../styles/fonts.css"
 import "../styles/styles.css"
 import classes from "../styles/layout.module.css"
 
