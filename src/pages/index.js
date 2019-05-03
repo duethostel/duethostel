@@ -1,28 +1,21 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header"
 
-const HomePage = () => {
-  return (
-    <StaticQuery
-      query={graphql`
-        query {
-          placeholderImage: file(relativePath: { eq: "photos/home.jpg" }) {
-            childImageSharp { fluid { ...GatsbyImageSharpFluid } }
-          }
-        }
-      `}
-      render={data => (
-        <Layout solidToolbarAt={80}>
-          <SEO title="Home" keywords={[]} />
-          <Header height={80} photo={data.placeholderImage.childImageSharp.fluid}>Welcome!</Header>
-        </Layout>
-      )}
-    />
-  )
-} 
+export default ({ data }) => (
+  <Layout>
+    <SEO title="Home" keywords={[]} />
+    <Header height={80} photo={data.headerPhoto.childImageSharp.fluid}>Welcome!</Header>
+  </Layout>
+)
 
-export default HomePage
+export const query = graphql`
+  query {
+    headerPhoto: file(relativePath: { eq: "photos/home.jpg" }) {
+      childImageSharp { fluid { ...GatsbyImageSharpFluid } }
+    }
+  }
+`

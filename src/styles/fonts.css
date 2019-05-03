@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'TeXGyreAdventor';
+  src: local('TeXGyreAdventor-Regular'),
+    url('../fonts/subset-TeXGyreAdventor-Regular.woff2') format('woff2'),
+    url('../fonts/subset-TeXGyreAdventor-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'TeXGyreAdventor';
+  src: local('TeXGyreAdventor-Bold'),
+    url('../fonts/subset-TeXGyreAdventor-Bold.woff2') format('woff2'),
+    url('../fonts/subset-TeXGyreAdventor-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: local('EB Garamond Regular'),
+    local('EBGaramond-Regular'),
+    url('../fonts/eb-garamond-v10-cyrillic_latin-regular.woff2') format('woff2'),
+    url('../fonts/eb-garamond-v10-cyrillic_latin-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: local('EB Garamond Bold'),
+    local('EBGaramond-Bold'),
+    url('../fonts/eb-garamond-v10-cyrillic_latin-700.woff2') format('woff2'),
+    url('../fonts/eb-garamond-v10-cyrillic_latin-700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}

@@ -8,18 +8,13 @@
   z-index: 100;
   transition: background-color 0.3s ease;
 }
-.Toolbar.SemiSolid {
-  background-color: var(--main-dark-color-80);
-}
-.Toolbar.SemiSolid.Solid {
+.Toolbar.Opaque {
   background-color: var(--main-dark-color);
+  box-shadow: 0 0 10px var(--main-shadow-color);
 }
 
 .Toolbar .Navigation {
   margin: 0 20px;
-}
-.Toolbar .Navigation a {
-  text-shadow: 0 3px 3px var(--main-shadow-color);
 }
 
 .Toolbar .Logo {
@@ -33,9 +28,8 @@
 }
 .Toolbar .Logo svg {
   fill: var(--main-light-color);
-  filter: drop-shadow(0 3px 3px var(--main-shadow-color));
 }
-.Toolbar.SemiSolid .Logo {
+.Toolbar.Opaque .Logo {
   width: 98px;
   padding: 5px 30px;
 }
