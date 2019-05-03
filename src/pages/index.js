@@ -16,7 +16,7 @@ const HomePage = () => {
         }
       `}
       render={data => (
-        <Layout solidToolbarAt={80}>
+        <Layout>
           <SEO title="Home" keywords={[]} />
           <Header height={80} photo={data.placeholderImage.childImageSharp.fluid}>Welcome!</Header>
         </Layout>

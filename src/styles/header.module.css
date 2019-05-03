@@ -12,8 +12,20 @@
   right: 0;
   bottom: 0;
 }
+.Photo:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2) 400px);
+}
 .Header h1 {
+  font-family: "TeXGyreAdventor", sans-serif;
+  font-weight: 400;
   position: relative;
-  font-size: calc(2em + 1vw);
-  text-shadow: 0 3px 3px var(--main-shadow-color);
+  font-size: calc(1em + 1.7vw);
+  text-transform: uppercase;
+  letter-spacing: calc(.1em + .5vw);
 }
