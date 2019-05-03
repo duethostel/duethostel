@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react"
+import React, { useEffect, useState } from "react"
 
 import Logo from "./logo"
 import Navigation from "./navigation"
@@ -6,36 +6,20 @@ import DrawerToggle from "./drawerToggle"
 
 import classes from "../styles/toolbar.module.css"
 
-const Toolbar = ({ drawerStateToggleHandler, solidAt }) => {
-  const toolbar = useRef(null)
+const Toolbar = ({ drawerStateToggleHandler }) => {
+  const toolbarClasses = [classes.Toolbar]
+  const [opaque, setOpaque] = useState(false)
 
   useEffect(() => {
-    const logoHeight = toolbar.current.querySelector(`.${classes.Logo}`).offsetHeight
-    const toolbarHeight = toolbar.current.offsetHeight
-
-    window.onscroll = event => {
-      const solitAtPixels = solidAt
-        ? window.innerHeight / 100 * solidAt
-        : 400
-
-      if (window.scrollY > logoHeight) {
-        toolbar.current.classList.add(classes.SemiSolid)
-
-        if (window.scrollY > solitAtPixels - toolbarHeight) {
-          toolbar.current.classList.add(classes.Solid)
-        }
-        else {
-          toolbar.current.classList.remove(classes.Solid)
-        }
-      }
-      else {
-        toolbar.current.classList.remove(classes.SemiSolid)
-      }
-    }
+    window.addEventListener('scroll', _ => setOpaque(window.scrollY > 0))
   }, [])
 
+  if (opaque) {
+    toolbarClasses.push(classes.Opaque)
+  }
+
   return (
-    <div className={classes.Toolbar} ref={toolbar}>
+    <div className={toolbarClasses.join(' ')}>
       <div className={classes.Logo}>
         <Logo />
       </div>
