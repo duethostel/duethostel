@@ -1,10 +1,10 @@
 import React from "react"
 import Helmet from "react-helmet"
 
-import fontGaramondRegular from "eb-garamond-v10-cyrillic_latin-regular.woff2"
-import fontGaramondBold from "eb-garamond-v10-cyrillic_latin-700.woff2"
-import fontTXGARegular from "subset-TeXGyreAdventor-Regular.woff2"
-import fontTXGABold from "subset-TeXGyreAdventor-Bold.woff2"
+import fontGaramondRegular from "../fonts/eb-garamond-v10-cyrillic_latin-regular.woff2"
+import fontGaramondBold from "../fonts/eb-garamond-v10-cyrillic_latin-700.woff2"
+import fontTXGARegular from "../fonts/subset-TeXGyreAdventor-Regular.woff2"
+import fontTXGABold from "../fonts/subset-TeXGyreAdventor-Bold.woff2"
 
 import "../styles/fonts.css"
 
